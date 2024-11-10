@@ -143,11 +143,11 @@ class Composition{
 }
 
 
-abstract class Startegy{
+interface Startegy{
     public abstract void compose(List<Component> componentList);
 }
 
-class SimpleComposition extends Startegy{
+class SimpleComposition implements Startegy{
     public void compose(List<Component> componentList){
         for (Component component : componentList){
             component.display();
@@ -157,7 +157,7 @@ class SimpleComposition extends Startegy{
     }
 }
 
-class TexComposition extends Startegy{
+class TexComposition implements Startegy{
     public void compose(List<Component> componentList){
         for (Component component : componentList){
             component.display();
@@ -178,7 +178,7 @@ class TexComposition extends Startegy{
     }
 }
 
-class ArrayComposition extends Startegy{
+class ArrayComposition implements Startegy{
     public void compose(List<Component> componentList){
         for (int i = 0; i < componentList.size(); i+=3){
             for (int j = i; j < i+3; j++){
