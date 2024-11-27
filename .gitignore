@@ -1,8 +1,15 @@
+# Folder
 practice/*
+mid_practice/*
+mid/Midterm_1114
+
+# Data
 *.dataset
-*.in
-*.out
-*.zip
 sampleInput
 sampleOutput
+*.in
+*.out
+
+# Others
+*.zip
 *.pptx
